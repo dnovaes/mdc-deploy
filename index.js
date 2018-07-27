@@ -68,12 +68,12 @@ router.get('/', function (req, res){
     if(req.query.adm){
       adm = true;
     }
-    if(req.query.exp){
-      exp = true;
+//    if(req.query.exp){
+//      exp = true;
       res.render('index', {adm: adm, exp: exp});
-    }else{
+/*    }else{
       res.redirect('/experimento');
-    }
+    }*/
   }else{
     res.render('index', {adm: adm, exp: exp});
   }
